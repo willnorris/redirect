@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.4
-FROM cgr.dev/chainguard/go:latest as build
+FROM --platform=$BUILDPLATFORM cgr.dev/chainguard/go:latest as build
 LABEL maintainer="Will Norris <will@willnorris.com>"
 
 WORKDIR /app
